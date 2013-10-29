@@ -1,0 +1,50 @@
+Main
+====
+
+Well, I'm not too sure what I'm supposed to write about here. But here is my markup that I created on [Markable](http://markable.in/editor/ "Go to markable").
+
+![Beach picture](http://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/DUN_LAOGHAIRE_%281216826547%29_%283%29.jpg/320px-DUN_LAOGHAIRE_%281216826547%29_%283%29.jpg)
+
+*Here is a picture of a beach*
+
+
+Water
+
+![South Dublin Beach](http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/DALKEY%2C_SOUTH_DUBLIN_%28445434362%29_%283%29.jpg/305px-DALKEY%2C_SOUTH_DUBLIN_%28445434362%29_%283%29.jpg)
+
+*Here is a picture of a beach in Ireland*
+
+Flowers
+
+![South Dublin flowers](http://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/DALKEY%2C_SOUTH_DUBLIN_%28445439651%29_%283%29.jpg/320px-DALKEY%2C_SOUTH_DUBLIN_%28445439651%29_%283%29.jpg)
+
+*Here is a picture of some flowers in Ireland*
+
+Festival
+
+![South Dublin Festival](http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Dun_Laoghaire_Festival_of_World_Cultures_2007_%281233210145%29_%283%29.jpg/320px-Dun_Laoghaire_Festival_of_World_Cultures_2007_%281233210145%29_%283%29.jpg)
+
+*Here is a picture of Dun Laoghaire Festival of World Cultures 2007*
+
+About
+=====
+
+Welcome to my Fake company. We here love to code. We use markable to do markup of our html which make it easier.
+
+![Sara Vandandaigue](sara.png "Picture of Sara") Sara Vandandaigue, President of Fake Company
+
+Our mission is to make Sara code better.
+
+Sara also likes to go hiking and playing [disc golf](http://www.pdga.com/)
+
+
+Contact
+=======
+
+![Sara Vandandaigue](sara.png "Picture of Sara") Sara Vandandaigue
+
+Email: [sara@fake.com](mailto:sara@fake.com)
+Phone: 123-456-1234
+
+Mailing address: 12345 Fake Street, Bellevue WA 12335
+
