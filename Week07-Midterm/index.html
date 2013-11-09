@@ -2,7 +2,7 @@
 <html ng-app="elvenApp">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Elven Sprite</title>
+		<title>Clear Lake</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="favicon.png">
 		<!-- Latest compiled and minified CSS -->
@@ -13,10 +13,7 @@
 		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-		<script src="angular.js"></script>
-		<script src="angular-resource.js"></script>
 		<script src="index.js"></script>
-		<script src="MongoData.js"></script>
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top">
@@ -27,13 +24,15 @@
 						<span class="icon-bar"> </span>
 						<span class="icon-bar"> </span>
 					</button>
-					<a class="navbar-brand" href="index.html">Elvenware</a>
+					<a class="navbar-brand" href="index.html">Clear Lake</a>
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="About.html">About</a></li>
-						<li><a href="Contacts.html">Contact</a></li>
+						<li class="active"><a href="#">Home</a></li>
+						<li>
+							<a href="Activities.html">Activities</a>
+						</li>
+						<li><a href="Directions.html">Directions</a></li>
 						<li>
 							<a class="active" href="Database.html">Database</a>
 						</li>
@@ -45,22 +44,18 @@
 		<div class="container">
 			<div class="starter-template">
 
-				<h1>Database Presidents</h1>
+				<h1>Clear Lake</h1>
+				
+				<p>The <a href="http://www.fs.usda.gov/recarea/okawen/recreation/camping-cabins/recarea/?recid=58177&amp;actid=31">
+                    campground</a> link also list activities available in the area.
 
 				<div id='drawHere01' class='draw-target'></div>
 				<div id='drawHere02' class='draw-target'></div>
-				<div id="monogoData" ng-controller="MyController">
-					<p>This project retrieves a small amount of JSON from
-					a node server.</p>
-					<p>Rows in DB: {{presidentsLength}}</p>
-					<ul>
-						<li ng-repeat="president in presidents">
-							<p>{{president.getPresidentName()}}<br/>
-								TermStart: {{president.getTermStart()}}<br/>
-								TermEnd: {{president.getTermEnd()}}</p>
-						</li>
-					</ul>
-					<div ng-bind-html-unsafe="hint"></div>
+				<p>
+				    Favorite place, when I went. The campground we found
+				    <br />Day use camp hours of operation --> maybe on Directions page.
+				</p>
+					
 				</div>
 			</div>
 
