@@ -14,6 +14,27 @@ body {
 	padding-top: 50px;
 }
 
+.right
+{
+    position:absolute;
+    right:0px;
+    width:100px;
+}
+
+.left
+{
+    position:absolute;
+    left:0px;
+    width:100px;
+}
+
+.padAnimation
+{
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-right:90px;
+}
+
 .draw-target {
 	width: 74px;
 	height:74px;
