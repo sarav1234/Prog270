@@ -2,21 +2,27 @@
 <html ng-app="elvenApp">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Elven Sprite</title>
+		    <title>Elven Sprite</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="favicon.png">
+		
+		<link rel="shortcut icon" href="favicon.png
+		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 		<link href="index.css" rel="stylesheet" type="text/css" />
+		
 		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		
 		<script src="angular.js"></script>
 		<script src="angular-resource.js"></script>
 		<script src="index.js"></script>
 		<script src="MongoData.js"></script>
+		
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top">
@@ -31,14 +37,26 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
+						
+					    <!--Main, Activites, Directions, Database pages -->
+					    
 						<li><a href="index.html">Home</a></li>
-						<li>
-							<a href="Activities.html">Activities</a>
-						</li>
+						<li><a href="Activities.html">Activities</a></li>
 						<li><a href="Directions.html">Directions</a></li>
-						<li class="active">
-							<a href="Database.html">Database</a>
-						</li>
+						<li class="active"><a href="Database.html">Database</a></li>
+						
+						<!--Dropdown Menu -->
+						
+						<li class="dropdown">
+        					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        					
+        					<ul class="dropdown-menu">
+        						<li><a href="index.html">Home</a></li>
+        						<li><a href="About.html">About</a></li>
+        						<li><a href="Contacts.html">Contacts</a></li>
+        						<li><a href="Database.html">Database</a></li>
+        					</ul>
+				        </li><!-- /.dropdown -->
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -49,7 +67,6 @@
 
 				<h1>Database President</h1>
 
-				<div id='drawHere01' class='draw-target'></div>
 				<div id='drawHere02' class='draw-target'></div>
 				<div id="monogoData" ng-controller="MyController">
 					<p>This project retrieves a small amount of JSON from
@@ -65,7 +82,12 @@
 					<div ng-bind-html-unsafe="hint"></div>
 				</div>
 			</div>
+            
+            <hr />
 
+    		<footer>
+    			<p>&copy; Sara Vandandaigue 2013</p>
+    		</footer>
 		</div><!-- /.container -->
 
 	</body>

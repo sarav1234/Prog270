@@ -5,16 +5,20 @@
 		<title>Clear Lake</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="favicon.png">
+		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 		<link href="index.css" rel="stylesheet" type="text/css" />
+		
 		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 		<script src="index.js"></script>
 	</head>
+	
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
@@ -26,39 +30,117 @@
 					</button>
 					<a class="navbar-brand" href="index.html">Clear Lake</a>
 				</div>
+				
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li>
-							<a href="Activities.html">Activities</a>
-						</li>
+					    
+					    <!--Main, Activites, Directions, Database pages -->
+					    
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="Activities.html">Activities</a></li>
 						<li><a href="Directions.html">Directions</a></li>
-						<li>
-							<a class="active" href="Database.html">Database</a>
-						</li>
-					</ul>
+						<li><a href="Database.html">Database</a></li>
+						
+						<!--Dropdown Menu -->
+						
+						<li class="dropdown">
+        					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        					
+        					<ul class="dropdown-menu">
+        						<li><a href="index.html">Home</a></li>
+        						<li><a href="About.html">About</a></li>
+        						<li><a href="Contacts.html">Contacts</a></li>
+        						<li><a href="Database.html">Database</a></li>
+        					</ul>
+				        </li><!-- /.dropdown -->
+					</ul><!-- navigation -->
 				</div><!--/.nav-collapse -->
 			</div>
 		</div>
 
 		<div class="container">
 			<div>
-
-				<h1>Clear Lake</h1>
+                <h1 id="main">Clear Lake</h1>
+                
+                <p>I went camping to Clear Lake for the first time this summer. We were looking 
+                    for somewhere near water between Richland, WA and Bonney Lake, WA. It takes 
+                    about 2.5 hrs to drive there. The address and a map are located on our 
+                    <a href="Address.html">Address</a> page. 
+                </p>
+                <p>Clear Lake is not only somewhere to go camping. You can also go fishing, 
+                    swimming, and kayaking. For more information on things to do, please see our 
+                    <a href="Activities.html">Activities</a> page.
+                </p>
+            
+                <hr />
+                <br />
+                
+                <!-- 3 columns with pics -->
+                
+                <div class="row">
+        
+                    <!--Clear Lake pic -->
+        			<div class="col-md-4">
+        			    <img alt="Clear Lake" src="clearLake300x212.jpg" />
+        			    
+        			    <br />
+        			    
+        			    <b>View of Clear Lake Early Morning</b>
+        			    
+        			    <p> Clear Lake is just one of my favorite places to go. It's a quick
+        			        drive and it is very peaseful. And who can resist smores! I would love
+        			        to retire somewhere like this.
+        			        <br />
+        			    </p>
+    			    </div>
+    			    
+    			    <!--Camping pic -->
+    			    <div class="col-md-4">
+        			    <img alt="campground" src="perfectCamp300x225.jpg" />
+        			    
+        			    <br />
+        			    
+        			    <b>Free Campground By The Water</b>
+        			    
+        			    <p> There are several campgrounds available for overnight stays around
+        			        the lake. You may find more information about the available campgrounds 
+        			        on our <a href="http://www.fs.usda.gov/recarea/okawen/recreation/camping-cabins/recarea/?recid=58177&amp;actid=31">
+                            Directions</a> page
+                            <br />
+                        </p>
+    			    </div>
+        			
+        			<!--Fishing pic-->
+        			<div class="col-md-4">
+        			    <img alt="Fishing" src="fishing1-300x225.jpg" />
+        			    
+        			    <br />
+        			    
+        			    <b>Fishing At Our Camp</b>
+        			    
+        			    <p>Clear Lake is not only somewhere to go camping. You can also go fishing, 
+                            swimming, and kayaking. For more information on things to do, please see our 
+                            <a href="Activities.html">Activities</a> page.
+                            <br />
+                        </p>
+    			    </div>
+        		</div>
 				
-				<p>The <a href="http://www.fs.usda.gov/recarea/okawen/recreation/camping-cabins/recarea/?recid=58177&amp;actid=31">
-                    campground</a> link also list activities available in the area.
-
+				<br />
+				<hr />
+				<br />
+				
+				<!--Animation -->
 				<div id='drawHere01' class='draw-target'></div>
 				<div id='drawHere02' class='draw-target'></div>
-				<p>
-				    Favorite place, when I went. The campground we found
-				    <br />Day use camp hours of operation --> maybe on Directions page.
-				</p>
 					
-			</div>
-		</div>
+			</div><!-- /.row -->
 
+            <hr />
+
+    		<footer>
+    			<p>&copy; Sara Vandandaigue 2013</p>
+    		</footer>
 		</div><!-- /.container -->
 
 	</body>
