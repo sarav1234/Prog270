@@ -1,0 +1,7 @@
+total 12
+drwxrwxr-x  3 adminuser adminuser 4096 Nov 12 21:11 .
+drwxrwxr-x 10 adminuser adminuser 4096 Nov 12 21:10 ..
+-rw-rw-r--  1 adminuser adminuser    0 Nov 12 21:11 CloudNine.txt
+drwxrwxr-x  2 adminuser adminuser 4096 Nov 12 21:10 images
+-rw-rw-r--  1 adminuser adminuser    0 Nov 12 21:10 Test01.md
+-rw-rw-r--  1 adminuser adminuser    0 Nov 12 21:10 Test02.md
