@@ -37,8 +37,8 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="Picture.html">Pictures</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="Picture.html">Pictures</a></li>
                 <li><a href="About.html">About</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -71,7 +71,7 @@
 					<img src="Image140X140A.png" alt="First slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Enter a name and address</h1>
+							<h4>Sara (Me)</h4>
 
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 					<img src="Image140X140B.png" alt="Second slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Add, Update, Delete</h1>
+							<h4>Lise (My mom)</h4>
 
 						</div>
 					</div>
@@ -89,7 +89,7 @@
 					<img src="Image140X140C.png" alt="Third slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Go around on the carousel</h1>
+							<h4>Genevieve (My sister)</h4>
 						</div>
 					</div>
 				</div>
@@ -104,45 +104,43 @@
 
 		<div class="container marketing">
 
-			<!-- Three columns of text below the carousel -->
-		<div class="row" id="monogoData" ng-controller="MyController">
-			<div class="col-xs-6">
-				<div class='inputDiv'>
-					<input type='text' ng-model='firstName' placeholder='firstName'><br />
-					<input type='text' ng-model='lastName' placeholder='lastName'><br />
-					<input type='text' ng-model='address' placeholder='address'><br />
-					<input type='text' ng-model='city' placeholder='city'><br />
-					<input type='text' ng-model='state' placeholder='state'><br />
-					<input type='text' ng-model='zip' placeholder='zip'><br />
-					<input type='text' ng-model='phoneHome' placeholder='phoneHome'><br />
-					<input type='text' ng-model='phoneMobile' placeholder='phoneMobile'><br />
-					<input type='text' ng-model='email' placeholder='email'><br />
-					<input type='number' ng-change="indexChange()" ng-model='indexOfItemToDelete' min="0" max="{{presidentsLength-1}}">					<br />
-					<p>Rows in DB: {{presidentsLength}}</p>
-					<button ng-click='addPresident()'>Add Family Member</button>
-					<button ng-click='updateRow()'>Update</button>
-					<button ng-click='deleteRow()'>Delete</button>
-					<p>{{selectedIndex}}</p>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="pinkSara.png" alt="Generic placeholder image">
+          <h3>Sara</h3>
+          
+          <p>Well this is me. I love to programme. I am currently learning how to do unit testing
+            at work. I really enjoy it. I also go to school full-time and will be transferring to the
+            UW Tacoma in January for their BS Computer Sciences and Systems. On my spare time, I
+            love to play disc golf.
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-lg-4">
+          <img class="img-circle" src="greenLise.png" alt="Generic placeholder image">
+          <h3>Lise</h3>
+          
+          <p>This is my mom. She has been retired for several years now but she loves to keep buying doing
+            all sorts of crafts. For example, she is really good at knitting, quilting, jewelry making, and more.
+            She has also started to bicycle last year and is doing fantastic.
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-lg-4">
+          <img class="img-circle" src="blueGene.png" alt="Generic placeholder image">
+          <h4>Genevieve</h4>
+          
+          <p>This is my sister. She lives in Montreal, Quebec, Canada; and it frequently makes me
+            sad that I almost never get to see her. Luckily she will be coming down to Seattle for Christmas
+            with my nephew Charles-Anthoine. Last month, she participated in the Spartan race which lasted
+            8 hours before she completed it. It is sort of like a marathon / obstacle course. Really cool.
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	</div>
 
-				</div>
-			</div>
-			<!-- /.col-lg-4 -->
 		
-				<div class="col-xs-6">
-					<div class='inputDiv'>
-					<p> <b>Family Members</b></p>
-						<ul>
-							<li ng-repeat="president in presidents">
-								{{president.firstName}} {{president.lastName}}
-							</li>
-						</ul>
-						<div ng-bind-html-unsafe="hint"></div>
-					</div>
-				</div>
-				<!-- /.col-lg-4 -->
-
-			</div><!-- /.row -->
-
 			<!-- FOOTER -->
 			<footer>
 				<p class="pull-right"><a href="#">Back to top</a></p>

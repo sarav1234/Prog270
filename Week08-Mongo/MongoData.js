@@ -6,28 +6,19 @@
 
 angular.module('elvenApp', ['pres'])
 .constant('CONFIG', {
-    DB_NAME: 'elvenlab01',
-    COLLECTION: 'address',
-    API_KEY: 'qfSxFoUGHBA1EuUlqhux_op2fy6oF_wy'
+    DB_NAME: 'prog270-vandandaigue',
+    COLLECTION: 'Week08-MongoDb',
+    API_KEY: '3tX9P3UQjiW0G6-rd5Oy24wG8d8E7u_L'
 })
 .controller('MyController', function($scope, $http, presidents) {
     $scope.hint = "<p>Start with <strong>node server.js</strong> to retrieve JSON from Server</p>";
-    
-    $scope.presidentsLength = 0;
-    $scope.userIndexSelection = 0;
     
     // $scope.presidents = presidents;
     $scope.presidents = presidents.query({}, function(presidents) {
       $scope.presidentsLength = presidents.length;
       console.log($scope.presidentsLength);
-      $scope.userIndexSelection = 0;      
-      $('#indexSelection').val("0");
-      $scope.indexChange();
     });
     
-    $scope.test = function() {
-    	$scope.userIndexSelection = 0;
-    };
     
     $scope.addPresident = function() {
         var pres = new presidents({
@@ -48,10 +39,10 @@ angular.module('elvenApp', ['pres'])
     };
     
     $scope.deleteRow = function() {
-        var userIndexSelection = $scope.userIndexSelection;
-        // if (userIndexSelection < $scope.presidents.length) {}
-        $scope.presidents[userIndexSelection].remove(function(deletedObject, headers) {
-            $scope.presidents.splice(userIndexSelection, 1);
+        var indexOfItemToDelete = $scope.indexOfItemToDelete;
+        // if (indexOfItemToDelete < $scope.presidents.length) {}
+        $scope.presidents[indexOfItemToDelete].remove(function(deletedObject, headers) {
+            $scope.presidents.splice(indexOfItemToDelete, 1);
             $scope.presidentsLength = $scope.presidents.length;
         }, function(err) {
             console.log("error: " + err.data.message);  
@@ -59,7 +50,7 @@ angular.module('elvenApp', ['pres'])
     };
     
     $scope.updateRow = function() {
-        var indexOfItemToUpdate = $scope.userIndexSelection;
+        var indexOfItemToUpdate = $scope.indexOfItemToDelete;
         $scope.presidents[indexOfItemToUpdate].firstName = $scope.firstName;
         $scope.presidents[indexOfItemToUpdate].lastName = $scope.lastName;
         $scope.presidents[indexOfItemToUpdate].city = $scope.city;
@@ -76,15 +67,15 @@ angular.module('elvenApp', ['pres'])
     };
     
     $scope.indexChange = function() {        
-        $scope.firstName = $scope.presidents[$scope.userIndexSelection].firstName;
-        $scope.lastName = $scope.presidents[$scope.userIndexSelection].lastName;
-        $scope.address = $scope.presidents[$scope.userIndexSelection].address;
-        $scope.city = $scope.presidents[$scope.userIndexSelection].city;
-        $scope.state = $scope.presidents[$scope.userIndexSelection].state;
-        $scope.zip = $scope.presidents[$scope.userIndexSelection].zip;
-        $scope.phoneMobile = $scope.presidents[$scope.userIndexSelection].phoneMobile;
-        $scope.phoneHome = $scope.presidents[$scope.userIndexSelection].phoneHome;
-        $scope.email = $scope.presidents[$scope.userIndexSelection].email;
+        $scope.firstName = $scope.presidents[$scope.indexOfItemToDelete].firstName;
+        $scope.lastName = $scope.presidents[$scope.indexOfItemToDelete].lastName;
+        $scope.address = $scope.presidents[$scope.indexOfItemToDelete].address;
+        $scope.city = $scope.presidents[$scope.indexOfItemToDelete].city;
+        $scope.state = $scope.presidents[$scope.indexOfItemToDelete].state;
+        $scope.zip = $scope.presidents[$scope.indexOfItemToDelete].zip;
+        $scope.phoneMobile = $scope.presidents[$scope.indexOfItemToDelete].phoneMobile;
+        $scope.phoneHome = $scope.presidents[$scope.indexOfItemToDelete].phoneHome;
+        $scope.email = $scope.presidents[$scope.indexOfItemToDelete].email;
     };
 });
 
