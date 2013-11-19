@@ -1,91 +1,140 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>Elven Bootstrap02</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<link href="Carousel.css" rel="stylesheet" type="text/css" />
+		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="angular.js"></script>
+		<script src="angular-resource.js"></script>
+		<script src="MongoData.js"></script>
+	</head>
+	<body>
+		
+		<!-- Nav Bar 
+		================================================== -->
+		
+		<div class="navbar-wrapper">
+      	<div class="container">
 
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Boot Strap Demo">
-	<meta name="author" content="Charlie Calvert">
-	<link rel="shortcut icon" href="favicon.png">
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pictures</a></li>
+                    <li><a href="#">About</a></li>                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-	<title>A Bootstrap Demo</title>
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
-	
-	<!-- Bootstrap core CSS -->
-	<link href="index.css" rel="stylesheet">
-
-	<!-- Custom styles for this template -->
-	<link href="Jumbo.css" rel="stylesheet">
-
-	<!-- Custom Grid Style -->
-	<link href="Grid.css" rel="stylesheet">
-
-	<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
-	<script src="//code.jquery.com/jquery.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-
-	<div class="navbar navbar-inverse navbar-fixed-top">
-	  <div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Project name</a>
 		</div>
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="#contact">Pictures</a></li>
-				<li><a href="#about">About</a></li>
-				
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Pictures</a></li>
-						<li><a href="#">About</a></li>						
-					</ul>
-				</li>
-			</ul>
+		</div> <!-- Navbar wrapper -->
 
-		</div><!--/.navbar-collapse -->
-	  </div>
+
+		<!-- Carousel
+		================================================== -->
+		<div id="myCarousel" class="carousel slide">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="Image140X140A.png" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Enter a name and address</h1>
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="Image140X140B.png" alt="Second slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Add, Update, Delete</h1>
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="Image140X140C.png" alt="Third slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Go around on the carousel</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div><!-- /.carousel -->
+
+		<!-- Marketing messaging and featurettes
+		================================================== -->
+		<!-- Wrap the rest of the page in another container to center all the content. -->
+
+		<div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="Image140X140A.png" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="Image140X140B.png" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="Image140X140C.png" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 	</div>
 
-	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron">
-		<div class="container">
-			<h1>About</h1>
-			<p>Main Text Here</p>
-			<img src="favicon.png" alt="favicon">
-			<p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-		</div>
-	</div>
+		
+			<!-- FOOTER -->
+			<footer>
+				<p class="pull-right"><a href="#">Back to top</a></p>
+				<p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+			</footer>
 
-	<div class="container">
-		<h3>Columns</h3>
-		<p>Add some text here.</p>
-		<div class="row">
-			<div class="col-md-4"><img src="favicon.png" alt="favicon"> Column01</div>
-			<div class="col-md-4"><img src="favicon.png" alt="favicon"> Column02</div>
-			<div class="col-md-4"><img src="favicon.png" alt="favicon"> Column03</div>
-		</div>
-
-		<hr>
-
-		<footer>
-			<p>&copy; Elvenware 2013</p>
-		</footer>
-	</div> <!-- /container -->
+		</div><!-- /.container -->
 
 	</body>
 </html>

@@ -2,7 +2,7 @@
 <html ng-app="elvenApp">
 	<head>
 		<meta charset="utf-8" />
-		<title>Elven Bootstrap02</title>
+		<title>Elven Mongo Bootstrap Data</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="favicon.png">
 		<!-- Latest compiled and minified CSS -->
@@ -39,7 +39,7 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">Pictures</a></li>
-                <li><a href="About01.html">About</a></li>
+                <li><a href="About.html">About</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -117,11 +117,12 @@
 					<input type='text' ng-model='phoneHome' placeholder='phoneHome'><br />
 					<input type='text' ng-model='phoneMobile' placeholder='phoneMobile'><br />
 					<input type='text' ng-model='email' placeholder='email'><br />
-					<input type='number' ng-change="indexChange()" ng-model='indexOfItemToDelete' min="0" max="{{presidentsLength-1}}">					<br />
+					<input id="indexSelection" type='number' ng-change="indexChange()" ng-model='userIndexSelection' min="0" max="{{presidentsLength-1}}">					<br />
 					<p>Rows in DB: {{presidentsLength}}</p>
 					<button ng-click='addPresident()'>Add President</button>
 					<button ng-click='updateRow()'>Update</button>
 					<button ng-click='deleteRow()'>Delete</button>
+					<button ng-click='test()'>Test</button>
 					<p>{{selectedIndex}}</p>
 
 				</div>
