@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>Android Galaxy S4 Device</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="Images/favicon.png">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link href="Style/bootstrap.css" rel="stylesheet" >
+		
+		<!-- link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" -->
+		<!-- Optional theme -->
+		<link href="Style/Carousel.css" rel="stylesheet" type="text/css" />
+		<link href="Style/index.css" rel="stylesheet" type="text/css" />
+		
+		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+		<script src="Source/jquery.js"></script>
+		<script src="Source/bootstrap.min.js"></script>
+		<script src="Source/angular.js"></script>
+		<script src="Source/angular-resource.js"></script>
+		<script src="Source/MongoData.js"></script>
+		<script src="Source/index.js"></script>
+		
+	</head>
+	<body>
+		
+		<!-- Nav Bar
+		================================================== -->
+
+		<div class="navbar-wrapper">
+		<div class="container">
+
+		<div class="navbar navbar-inverse navbar-static-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+			  </button>
+			  <a class="navbar-brand" href="index.html">Week09-AndroidBootstrap</a>
+			</div>
+			<div class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="Bus.html">One Bus Away</a></li>
+				<li><a href="Camera.html">Camera</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				  <ul class="dropdown-menu">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="Bus.html">One Bus Away</a></li>
+					<li><a href="Camera.html">Camera</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+
+		</div>
+		</div> <!-- Navbar wrapper -->
+				
+		<!-- Carousel
+        ================================================== -->
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+				<!-- Extra slide -->
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="Images/Image140X140A.png"#777:#7a7a7a alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Click to see the <a href="#map">Bus Map</a></h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/Image140X140B.png" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Click to see the <a href="#arrivals">Bus Arrivals</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/Image140X140C.png" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Click to see the <a href="#route">Bus Routes</a></h1>
+                        </div>
+                    </div>
+                </div>
+				<!-- Extra slide -->
+				<div class="item">
+                    <img src="Images/Image140X140C.png" alt="Fourth slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Click to see the <a href="#extraSlide">Extra Slide</a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="carousel-arrows">&#5595;</span></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="carousel-arrows">&#5593;</span></a>
+        </div><!-- /.carousel -->
+
+
+		<div class="container">
+			<div class="starter-template">
+				<h1>Android OneBusAway Application</h1>
+				<div id='drawHere01' class='draw-target'></div>
+				<p class="lead">OneBusAway is a bus tracking application. It allows you to pick a bus stop and see how long it will
+					be before your bus arrives. It also has other features such as setting up a reminder so that you don't miss your
+					bus. </p>
+			</div>
+
+ <!-- START THE FEATURETTES -->
+
+      <hr id="map" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">OneBusAway Application. <span class="text-muted">Bus Stop Map.</span></h2>
+          <p class="lead">This screen uses the device's GPS location to show a map of the area you're in. It displays
+			the various bus stops near your location. Simply touch the bus stop on the device to select it and the location
+			displays at the top of the page.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="https://googledrive.com/host/0B8PaSidqDlpUSmVzaGhWc3ZoM3M/busMap" alt="OneBusAway Bus Map" >
+        </div>
+      </div>
+
+      <hr  id="arrivals" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="https://googledrive.com/host/0B8PaSidqDlpUSmVzaGhWc3ZoM3M/busArrivals" alt="OneBusAway Arrivals">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">OneBusAway Application. <span class="text-muted">Bus Stop Arrivals.</span></h2>
+          <p class="lead">With the bus stop selected, clicking on [Arrivals] displays the various buses on the way by arrival
+			time. There is also a setting where you can filter based on the bus number. This is very useful for transit centers
+			or downtown Seattle bus stops. In addition, it displays in how many minutes the bus will arrival along with the scheduled
+			arrival time. When the bus is late, the time is displayed in red.
+		  </p>
+        </div>
+      </div>
+
+      <hr  id="route" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">OneBusAway Application. <span class="text-muted">Bus Routes.</span></h2>
+          <p class="lead">With the bus stop selected, clicking on [Routes] will displays all the bus numbers that come to the selected
+			bus stop. This is useful when you are not sure which stop your bus comes to as you can just click the different stops and
+			the route are updated on the same page.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="https://googledrive.com/host/0B8PaSidqDlpUSmVzaGhWc3ZoM3M/busRoute" alt="OneBusAway Bus Routes" >
+        </div>
+      </div>
+	  
+	  <hr  id="extraSlide" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="https://googledrive.com/host/0B8PaSidqDlpUSmVzaGhWc3ZoM3M/busArrivals" alt="OneBusAway Arrivals">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">OneBusAway Application. <span class="text-muted">Extra Slide.</span></h2>
+          <p class="lead">I wasn't sure if the purpose of having this layout on index.html was for us to show that we could add an extra slide, so I added this extra slide. I decided to do a category layout for the index.html so that it wouldn't be 6 things long. I hope that's ok. I changed my mind about the layout at the last moment, well 4pm on Monday.
+		  </p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+		</div><!-- /.container -->
+
+	</body>
+</html>

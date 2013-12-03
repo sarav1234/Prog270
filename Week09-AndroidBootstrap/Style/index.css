@@ -11,6 +11,34 @@ img.half {
     width: 50%;
 }
 
+td, th
+{
+	padding:10px;
+}
+
+table, td, th
+{
+	border:1px solid green;
+}
+th
+{
+	background-color:green;
+	color:white;
+}
+
+.center
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.picCenter
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 .carousel-arrows {
     left: 50%;
     box-sizing: border-box;
